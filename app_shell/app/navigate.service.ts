@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
 export class NavigateService {
   navData: any = [ 
     {key:'Dashboard', value: 'http://localhost:4201/'}, 
-    {key:'UM', value: 'http://localhost:4202/' }];
+    {key:'UM', value: 'http://localhost:4202/' }
+  ];
 
   constructor() { }
 

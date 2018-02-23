@@ -1,10 +1,11 @@
 <ul>
     <li>
-        <a href="#"><i class="fa fa-plus-square fa-2x"></i></a>
+        <a href="javascript:void(0)" (click)="click(navService.navData[0].key)">
+            <i class="fa fa-plus-square fa-2x"></i>
+        </a>
     </li>
     <li *ngFor="let menuItem of navService.navData; let i = index">
         <a href="javascript:void(0)" (click)="click(menuItem.key)">{{menuItem.key}}</a>
     </li>
 </ul>
-
 <router-outlet></router-outlet>
