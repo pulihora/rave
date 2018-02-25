@@ -16,7 +16,7 @@ import { NavigateService } from './navigate.service';
 })
 export class FrameComponent {
   
-  private iframeSource: SafeResourceUrl;
+  iframeSource: SafeResourceUrl;
   private url:string;
   
   constructor(

@@ -7,6 +7,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ShellComponent } from './shell.component';
 import { FrameComponent } from './frame.component';
 import { NavigateService } from './navigate.service';
+import { PreferenceService } from '../../core/pref.service';
 const routes:Routes = [
   {
     path:'**',
@@ -24,7 +25,7 @@ const routes:Routes = [
     AngularFontAwesomeModule,
     RouterModule.forRoot(routes,{useHash:true})
   ],
-  providers: [NavigateService],
+  providers: [NavigateService,PreferenceService],
   bootstrap: [ShellComponent]
 })
 export class ShellModule { }
