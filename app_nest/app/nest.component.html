@@ -1,5 +1,12 @@
 <div class="container h-100 d-flex justify-content-center">
   <div class="jumbotron my-auto">
-    <h1 class="display-6">UM Case</h1>
+    
+
+      <a href="https://home.nest.com/login/oauth2?client_id=1dcadd93-8cee-4caa-a97e-ac0752e46985&state=STATE" target="new">Get PIN</a>
+      <br/>
+      <input [(ngModel)]="nestpin" />
+      <br/><br/>
+      <button (click)="GetAccessToken()">Get Access Token</button> 
+   
   </div>
 </div>
